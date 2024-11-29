@@ -47,7 +47,7 @@ const Hero = () => {
                     Our Partners
                   </Button>
                 </div>
-                <div className="grid mt-8 shadow-sm shadow-primary-400">
+                <div className="grid mt-8 shadow-sm">
                   <h2 className="text-2xl text-center">
                     Minus non dicta ducimus nulla aliquid. Doloremque numquam
                    e  Doloremque numquam
@@ -57,7 +57,7 @@ const Hero = () => {
                     <Button
                       size="lg"
                       variant="ghost"
-                      className="bg-black- rounded-md text-prima-50 py-7 px-auto m-0"
+                      className="bg-black-1 rounded-md text-prima-50 py-7 px-auto m-0"
                     >
                       <FaBitcoin  className="w-60 h-60"/> Bitcoin
                      </Button>
