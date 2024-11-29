@@ -92,7 +92,7 @@ const Hero = () => {
                     <Button
                       size="lg"
                       variant="ghost"
-                      className="bg-black-1 text-prima-50 py-7 px-auto m-0"
+                      className="bg-black-1 text-prima-50 py-7 px-auto shadow-[16px_16px_20px_#eeeef0] m-0"
                     >
                       <FaEthereum  className="w-60 h-60"/> Ethereum
                      </Button>
