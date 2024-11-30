@@ -1,9 +1,12 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 import React from "react";
 import { Button } from "./ui/button";
 
 import { FaEthereum } from "react-icons/fa";
 import { FaBitcoin } from "react-icons/fa";
 import { FaCoins } from "react-icons/fa";
+import Image from "next/image";
+import Link from "next/link";
 // import { BackgroundBeamsWithCollision } from './ui/background-beams-with-collision';
 
 const Hero = () => {
@@ -47,13 +50,36 @@ const Hero = () => {
                     Our Partners
                   </Button>
                 </div>
-                <div className="grid mt-8 shadow-sm">
-                  <h2 className="text-2xl text-center">
-                    Minus non dicta ducimus nulla aliquid. Doloremque numquam
-                   e  Doloremque numquam
-                   e
+                <div className="grid mt-8 shadow-sm mb-4">
+                  <h2 className="text-xl text-center">
+                    Minus non dicta ducimus nulla aliquid. Doloremque numquam e
+                    Doloremque numquam e
                   </h2>
-                  <div className="flex mt-12 flex-col md:flex-row lg:flex-row justify-center items-center gap-4">
+                  <div className="flex flex-col justify-center items-center gap-4 md:flex-row lg:flex-row mb-6 mt-6">
+                    <Link href={"/"} className="border-1 inline-block justify-center items-center border-primary-300">
+                      <Image
+                        src={"/assets/etherlogo.png"}
+                        width={"100"}
+                        height={"100"}
+                        alt="logo"
+                        className="bg-transparent"
+                      />
+                      Ethereum
+                    </Link>
+                    <Link href={"/"} className="border-1 border-primary-300">
+                      <Image
+                        src={"/assets/bitcoin.png"}
+                        width={"100"}
+                        height={"100"}
+                        alt="logo"
+                        className="bg-transparent"
+                        
+                      />
+                      Bitcoin
+                    </Link>
+                  
+                  </div>
+                  {/* <div className="flex mt-12 flex-col md:flex-row lg:flex-row justify-center items-center gap-4">
                     <Button
                       size="lg"
                       variant="ghost"
@@ -64,14 +90,15 @@ const Hero = () => {
                     <Button
                       size="lg"
                       variant="ghost"
-                      className="bg-black-1 text-prima-50 py-7 px-auto m-0"
+                      className="bg-black-1 rounded-md text-prima-50 py-7 px-auto m-0"
                     >
-                      <FaEthereum  className="w-60 h-60"/> Ethereum
-                     </Button>
-                    <Button
+                      <Image src={'/assets/etherlogo.png'} width={'100'} height={'100'} alt="logo" className="bg-transparent"/>
+                      {/* <FaEthereum  className="w-60 h-60"/> Ethereum */}
+                  {/* </Button> */}
+                  {/* <Button
                       size="lg"
                       variant="ghost"
-                      className="bg-black-1 text-prima-50 py-7 px-auto m-0"
+                      className="bg-black-1 rounded-md text-prima-50 py-7 px-auto m-0"
                     >
                       <FaCoins  className="w-60 h-60"/> FaCoins
                      </Button>
@@ -92,11 +119,11 @@ const Hero = () => {
                     <Button
                       size="lg"
                       variant="ghost"
-                      className="bg-black-1 text-prima-50 py-7 px-auto shadow-[16px_16px_20px_#eeeef0] m-0"
+                      className="bg-black-1 text-prima-50 py-7 px-auto shadow-[4px_4px_8px_#eeeef0] m-0"
                     >
                       <FaEthereum  className="w-60 h-60"/> Ethereum
                      </Button>
-                  </div>
+                 </div> */}
                 </div>
               </div>
             </div>
