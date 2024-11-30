@@ -38,7 +38,7 @@ const Footer = () => {
             <div className='flex flex-col'>
                    <ul>
                     <li className='list-none uppercase font-semibold py-4 text-primary-600'>Contact</li>
-                    <li className='list-none'>Website: www.urisat.dev</li>
+                    
                     <li className='list-none'>Email: urisatinfo@urisat.dev</li>
                     <li className='list-none'>Phone: +243 993 7856 111</li>
                     <li className='list-none'>Photograpy</li>

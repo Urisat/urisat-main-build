@@ -77,7 +77,56 @@ const Hero = () => {
                       />
                       Bitcoin
                     </Link>
-                  
+                    <Link href={"/"} className="border-1 inline-block justify-center items-center border-primary-300">
+                      <Image
+                        src={"/assets/etherlogo.png"}
+                        width={"100"}
+                        height={"100"}
+                        alt="logo"
+                        className="bg-transparent"
+                      />
+                      Ethereum
+                    </Link>
+                    <Link href={"/"} className="border-1 inline-block justify-center items-center border-primary-300">
+                      <Image
+                        src={"/assets/etherlogo.png"}
+                        width={"100"}
+                        height={"100"}
+                        alt="logo"
+                        className="bg-transparent"
+                      />
+                      Ethereum
+                    </Link>
+                    <Link href={"/"} className="border-1 inline-block justify-center items-center border-primary-300">
+                      <Image
+                        src={"/assets/etherlogo.png"}
+                        width={"100"}
+                        height={"100"}
+                        alt="logo"
+                        className="bg-transparent"
+                      />
+                      Ethereum
+                    </Link>
+                    <Link href={"/"} className="border-1 inline-block justify-center items-center border-primary-300">
+                      <Image
+                        src={"/assets/etherlogo.png"}
+                        width={"100"}
+                        height={"100"}
+                        alt="logo"
+                        className="bg-transparent"
+                      />
+                      Ethereum
+                    </Link>
+                    <Link href={"/"} className="border-1 inline-block justify-center items-center border-primary-300">
+                      <Image
+                        src={"/assets/etherlogo.png"}
+                        width={"100"}
+                        height={"100"}
+                        alt="logo"
+                        className="bg-transparent"
+                      />
+                      Ethereum
+                    </Link>
                   </div>
                   {/* <div className="flex mt-12 flex-col md:flex-row lg:flex-row justify-center items-center gap-4">
                     <Button

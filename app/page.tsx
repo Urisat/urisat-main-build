@@ -8,7 +8,9 @@ export default function Home() {
     <section className="h-full min-w-screen py-2">
       <div className="container w-full  h-auto">
         <Hero />
+        <div className="mt-12">
         <Partner/>
+        </div>
       </div>
     </section>
    
