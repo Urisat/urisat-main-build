@@ -6,10 +6,10 @@ import Footer from '@/components/Footer';
 
 // COMPONENT IMPORT
 
-const jetbrainsMono = JetBrains_Mono({
+const JetbrainsMono = JetBrains_Mono({
   subsets: ["latin"],
   weight: ["100", "200", "300", "400", "500", "600", "700", "800"],
-  variable: "--font-jetbrainsMono",
+  variable: "--font-JetbrainsMono",
 });
 
 
@@ -26,7 +26,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${jetbrainsMono.variable}`}
+        className={`${JetbrainsMono.variable}`}
       >
         <Header/>
         {children}

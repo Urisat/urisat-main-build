@@ -7,11 +7,12 @@ import { FaBitcoin } from "react-icons/fa";
 import { FaCoins } from "react-icons/fa";
 import Image from "next/image";
 import Link from "next/link";
+import { Card, CardContent } from "./ui/card";
 // import { BackgroundBeamsWithCollision } from './ui/background-beams-with-collision';
 
 const Hero = () => {
   return (
-    <section className="">
+    <section className="h-auto relative">
       <>
         <div
           id="home"
@@ -19,7 +20,7 @@ const Hero = () => {
         >
           <div className="grid items-start justify-items-center">
             <div className="grid justify-items-center mt-7 mb-8 md:mt-7 md:mb-12">
-              <h2 className="text-bold text-2xl lg:text-24xl md:text-5xl sm:text-xl mt-4 text-center xsm:text-3xl filter drop-shadow-lg bg-gradient-to-r from-primary-700 to-white bg-clip-text text-transparent text-wrap">
+              <h2 className="text-bold text-4xl lg:text-24xl md:text-5xl sm:text-xl mt-4 text-center xsm:text-3xl filter drop-shadow-lg bg-gradient-to-r from-primary-700 to-white bg-clip-text text-transparent text-wrap">
                 {" "}
                 The Future of Finance <br />
                 Transform Transactions With Secure <br /> Blockchain Solutions
@@ -29,157 +30,94 @@ const Hero = () => {
                 Solutions Lorem <br /> ipsum, dolor sit amet consectetur
                 adipisicing elit. Ea assumenda at laboriosam architecto
               </p>
-              <div className="flex py-4 items-center justify-center gap-10 sm:gap-3 sm:flex-col sm:w-full">
+              <div className="flex items-center py-4 justify-center md:flex-row gap-2 w-full md:gap-4 flex-col">
                 <Button
                   variant="ghost"
                   size={"lg"}
                   className="bg-primary-300 rounded-full"
                 >
-                  Explore More
+                  <h2 className="font-semibold"> Explore More</h2>
+                </Button>
+                <Button
+                  variant="ghost"
+                  size={"lg"}
+                  className="bg-inherit hover:bg-primary-300/20 border border-primary-700 rounded-full"
+                >
+                  <h2 className="font-semibold"> Explore More</h2>
                 </Button>
               </div>
             </div>
-            <div className="min-w-full mx-auto object-contain bg-black-1/5 inset-x-16 bg-gradient-to-b from-white/15 shadow-sm to-black/1 opacity-80 rounded-tl-[100%] rounded-tr-[100%] h-[250px]">
-              <div className="grid justify-items-center">
-                <div className="mt-8  overflow-hidden Sm:scroll-m-4">
+            <div className="min-w-full  object-contain bg-black-1/5 inset-x-16 bg-gradient-to-b from-white/15 shadow-sm to-black/1 opacity-80 rounded-tl-[100%] rounded-tr-[100%] h-full">
+              <div className="grid grid-cols-1 justify-items-center">
+                <div className="mt-4  overflow-hidden flex flex-col mb-auto Sm:scroll-m-4">
                   <Button
                     size={"lg"}
                     variant={"outline"}
                     className="hover:bg-primary-300 rounded-full border-2 hover:border-primary-300"
                   >
-                    Our Partners
+                    <h2 className="font-semibold"> Our Partners</h2>
                   </Button>
+    
                 </div>
                 <div className="grid mt-8 shadow-sm mb-4">
-                  <h2 className="text-xl text-center">
-                    Minus non dicta ducimus nulla aliquid. Doloremque numquam e
-                    Doloremque numquam e
+                  <h2 className="text-xl text-center text-primary-50">
+                    Leading the Way in Crypto Trusted With Urisat
                   </h2>
-                  <div className="flex flex-col justify-center items-center gap-4 md:flex-row lg:flex-row mb-6 mt-6">
-                    <Link href={"/"} className="border-1 inline-block justify-center items-center border-primary-300">
-                      <Image
-                        src={"/assets/etherlogo.png"}
-                        width={"100"}
-                        height={"100"}
-                        alt="logo"
-                        className="bg-transparent"
-                      />
-                      Ethereum
-                    </Link>
-                    <Link href={"/"} className="border-1 border-primary-300">
-                      <Image
-                        src={"/assets/bitcoin.png"}
-                        width={"100"}
-                        height={"100"}
-                        alt="logo"
-                        className="bg-transparent"
-                        
-                      />
-                      Bitcoin
-                    </Link>
-                    <Link href={"/"} className="border-1 inline-block justify-center items-center border-primary-300">
-                      <Image
-                        src={"/assets/etherlogo.png"}
-                        width={"100"}
-                        height={"100"}
-                        alt="logo"
-                        className="bg-transparent"
-                      />
-                      Ethereum
-                    </Link>
-                    <Link href={"/"} className="border-1 inline-block justify-center items-center border-primary-300">
-                      <Image
-                        src={"/assets/etherlogo.png"}
-                        width={"100"}
-                        height={"100"}
-                        alt="logo"
-                        className="bg-transparent"
-                      />
-                      Ethereum
-                    </Link>
-                    <Link href={"/"} className="border-1 inline-block justify-center items-center border-primary-300">
-                      <Image
-                        src={"/assets/etherlogo.png"}
-                        width={"100"}
-                        height={"100"}
-                        alt="logo"
-                        className="bg-transparent"
-                      />
-                      Ethereum
-                    </Link>
-                    <Link href={"/"} className="border-1 inline-block justify-center items-center border-primary-300">
-                      <Image
-                        src={"/assets/etherlogo.png"}
-                        width={"100"}
-                        height={"100"}
-                        alt="logo"
-                        className="bg-transparent"
-                      />
-                      Ethereum
-                    </Link>
-                    <Link href={"/"} className="border-1 inline-block justify-center items-center border-primary-300">
-                      <Image
-                        src={"/assets/etherlogo.png"}
-                        width={"100"}
-                        height={"100"}
-                        alt="logo"
-                        className="bg-transparent"
-                      />
-                      Ethereum
-                    </Link>
+
+                  <div className="flex mt-2 flex-col  md:flex-row lg:flex-row justify-center items-center gap-4 mb-16">
+                    <Card className="border-none scroll">
+                      <CardContent className="flex mx-4 gap-4">
+                        <Image
+                          src="/assets/bit.png"
+                          className="justify-center"
+                          width={100}
+                          height={100}
+                          alt="logoPartener"
+                        />
+                         <Image
+                          src="/assets/crypto.png"
+                          className="justify-center"
+                          width={100}
+                          height={100}
+                          alt="logoPartener"
+                        />
+                        <Image
+                          src="/assets/TetherLogo.png"
+                          className="justify-center"
+                          width={100}
+                          height={100}
+                          alt="logoPartener"
+                        />
+                        <Image
+                          src="/assets/sol.png"
+                          className="justify-center"
+                          width={100}
+                          height={100}
+                          alt="logoPartener"
+                        />
+                      </CardContent>
+                    </Card>
                   </div>
-                  {/* <div className="flex mt-12 flex-col md:flex-row lg:flex-row justify-center items-center gap-4">
-                    <Button
-                      size="lg"
-                      variant="ghost"
-                      className="bg-black-1 rounded-md text-prima-50 py-7 px-auto m-0"
-                    >
-                      <FaBitcoin  className="w-60 h-60"/> Bitcoin
-                     </Button>
-                    <Button
-                      size="lg"
-                      variant="ghost"
-                      className="bg-black-1 rounded-md text-prima-50 py-7 px-auto m-0"
-                    >
-                      <Image src={'/assets/etherlogo.png'} width={'100'} height={'100'} alt="logo" className="bg-transparent"/>
-                      {/* <FaEthereum  className="w-60 h-60"/> Ethereum */}
-                  {/* </Button> */}
-                  {/* <Button
-                      size="lg"
-                      variant="ghost"
-                      className="bg-black-1 rounded-md text-prima-50 py-7 px-auto m-0"
-                    >
-                      <FaCoins  className="w-60 h-60"/> FaCoins
-                     </Button>
-                    <Button
-                      size="lg"
-                      variant="ghost"
-                      className="bg-black-1 text-prima-50 py-7 px-auto m-0"
-                    >
-                      <FaEthereum  className="w-60 h-60"/> Ethereum
-                     </Button>
-                    <Button
-                      size="lg"
-                      variant="ghost"
-                      className="bg-black-1 text-prima-50 py-7 px-auto m-0"
-                    >
-                      <FaEthereum  className="w-60 h-60"/> Ethereum
-                     </Button>
-                    <Button
-                      size="lg"
-                      variant="ghost"
-                      className="bg-black-1 text-prima-50 py-7 px-auto shadow-[4px_4px_8px_#eeeef0] m-0"
-                    >
-                      <FaEthereum  className="w-60 h-60"/> Ethereum
-                     </Button>
-                 </div> */}
                 </div>
+        
               </div>
+              
             </div>
           </div>
-          {/* <div className='relative flex h-full justify-center items-center '>
-            <div aria-hidden={false} className='  bg-primary-700 absolute inset-y-8  inset-x-0 w-full rounded-t-full rotate-360 bg-gradient-to-b from-black-1/10 to-primary-300 shadow-lg border-t-primary-700'></div>
-      </div> */}
+          <div className=" flex h-full w-full justify-between items-center bg-transparent ">
+            <div className="static flex w-auto bg-transparent">
+              <div className="bg-black-1 bg-gradient-to-r from-primary-300 to-black-1 opacity-10 mb-1 w-[60px] h-[60px]"></div>
+              <div className="bg-black-1 bg-gradient-to-r from-primary-300 to-black-1 opacity-10 mb-1 -mt-14 w-[60px] h-[60px]"></div>
+              <div className="bg-black-1 bg-gradient-to-r from-primary-300 to-black-1 opacity-10 mb-1  w-[60px] h-[60px]"></div>
+            </div>
+            
+
+            <div className="static flex w-auto bg-transparent">
+              <div className="bg-black-1 bg-gradient-to-r from-primary-300 to-black-1 opacity-10 mb-0 w-[60px] h-[60px]"></div>
+              <div className="bg-black-1 bg-gradient-to-r from-primary-300 to-black-1 opacity-10 mb-auto -mt-14 w-[60px] h-[60px]"></div>
+              <div className="bg-black-1 bg-gradient-to-r from-primary-300 to-black-1 opacity-10 mb-0  w-[60px] h-[60px]"></div>
+            </div>
+          </div>
         </div>
       </>
     </section>
