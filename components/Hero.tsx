@@ -61,12 +61,12 @@ const Hero = () => {
                 </div>
                 <div className="grid mt-8 shadow-sm mb-4">
                   <h2 className="text-xl text-center text-primary-50">
-                    Leading the Way in Crypto Trusted With Urisat
+                  Leading the way in trusted cryptography with Urisat and its partners
                   </h2>
 
                   <div className="flex mt-2 flex-col  md:flex-row lg:flex-row justify-center items-center gap-4 mb-16">
-                    <Card className="border-none scroll">
-                      <CardContent className="flex mx-4 gap-4">
+                    <Card className="border-none">
+                      <CardContent className="hidden md:flex flex-nowrap mx-4 gap-4">
                         <Image
                           src="/assets/bit.png"
                           className="justify-center"
@@ -83,6 +83,13 @@ const Hero = () => {
                         />
                         <Image
                           src="/assets/TetherLogo.png"
+                          className="justify-center"
+                          width={100}
+                          height={100}
+                          alt="logoPartener"
+                        />
+                           <Image
+                          src="/assets/wazi.webp"
                           className="justify-center"
                           width={100}
                           height={100}

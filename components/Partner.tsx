@@ -18,7 +18,7 @@ const Partner = () => {
     Autoplay({ delay: 2000, stopOnInteraction: true })
   );
   return (
-    <div className="static h-full min-w-full mt-4 md:mt-3 z-10 p-24 bg-gradient-to-r to-black from-primary-600 rounded-3xl text-clip shadow-[2px 2px 4px #0000000c] items-center justify-center">
+    <div id="partener" className="static h-full min-w-full mt-4 md:mt-3 z-10 p-24 bg-gradient-to-r to-black from-primary-600 rounded-3xl text-clip shadow-[2px 2px 4px #0000000c] items-center justify-center">
       <div className="-mt-4 text-center">
           <h1 className="text-base">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, magnam fugiat esse atque placeat fugit, laboriosam eaque recusandae pariatur optio a, autem et explicabo</h1>
       </div>

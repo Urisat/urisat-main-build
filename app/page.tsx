@@ -1,3 +1,4 @@
+import Faqs from "@/components/Faqs";
 import Feature from "@/components/Feature";
 import Hero from "@/components/Hero";
 import Partner from "@/components/Partner";
@@ -18,6 +19,9 @@ export default function Home() {
         </div>
         <div className="mt-6">
           <Feature/>
+        </div>
+        <div className="mt-6">
+          <Faqs/>
         </div>
       </div>
     </div>
