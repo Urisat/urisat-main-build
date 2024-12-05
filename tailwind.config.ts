@@ -24,9 +24,13 @@ module.exports = {
       primary: "var(--font-JetbrainsMono)",
     },
     extend: {
+      backgroundImage:{
+        'gradient-radial':"radial-gradient(var(--tw-gradient-stops))",
+        'gradient-radial-to-t':"radial-gradient(cercle at top, var(--tw-gradient-stops))"
+      },
       colors: {
         Textgradient: "linear-gradient(90deg, #F7931A 0%, #F3F9FF 100%)",
-
+          
         primary: {
           700: "#F7931A",
           600: "#F1AD5B",
@@ -37,11 +41,11 @@ module.exports = {
           100: "#F8F0E7",
           50: "#FAF7F4",
         },
-        sky: {
-          1: "#F3F9FF",
+        sky:{
+          1:"#F3F9FF"
         },
-        black: {
-          1: "#1E1E1E",
+        black:{
+          1:"#1E1E1E"
         },
         accent: {
           DEFAULT: "#F7931A",

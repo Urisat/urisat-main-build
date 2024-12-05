@@ -5,12 +5,12 @@ export const links = [
     path: "/",
   },
   {
-    id: "#technology",
+    id: "technology",
     name: "Technology",
     path: "/technology",
   },
   {
-    id: "#feature",
+    id: "feature",
     name: "Features",
     path: "/features",
   },
@@ -28,40 +28,39 @@ export const links = [
 
 export const projects = [
   {
-    title: "Stripe",
-    description:
-      "A technology company that builds economic infrastructure for the internet.",
-    link: " digital streaming, and artificial intelligence",
+    title: "Decentralization",
+    description:"No Single Point Of Control",
+    Subtitle:"Build On Distributed BlockChain Technology"
   },
   {
-    title: "Netflix",
+    title: "Security",
     description:
-      "A streaming service that offers a wide variety of award-winning TV shows, movies, .",
-    link: "streaming service that offers a wide variety ",
+      "End-To-End Encyption",
+      Subtitle: "Immutable Records on the Blockchain",
   },
   {
-    title: "Google",
+    title: "Transparency",
     description:
-      "A multinational technology company that specializes.",
-    link: "streaming service that offers a wide variety ",
+      "Open Ledger For Verifiable Transaction",
+      Subtitle: "Auditable Smart Contract ",
   },
   {
-    title: "Meta",
+    title: "Smart Contract",
     description:
-      "A technology company that focuses on building products that advance",
-    link: "streaming service that offers a wide variety ",
+      "Automated And Trustless Agreements",
+      Subtitle: "Reduced Need For Intermediaries",
   },
   {
-    title: "Amazon",
+    title: "Tokenization",
     description:
-      "A multinational technology company focusing on e-commerce, cloud computing,.",
-    link: " digital streaming, and artificial intelligence",
+      "Support For NFTs, TOkens, And DIgital Assets",
+      Subtitle: " Enable Staking, Governance, And Rewards",
   },
   {
-    title: "Microsoft",
+    title: "Scalability",
     description:
-      "A multinational technology company that develops, manufactures.",
-    link: "https://microsoft.com",
+      "High Transaction Throughput",
+      Subtitle: "Layer 2 Solution For Enhaced Performance",
   },
 ];
 

@@ -12,14 +12,14 @@ import { Card, CardContent } from "./ui/card";
 
 const Hero = () => {
   return (
-    <section className="h-auto relative">
+    <section className="h-auto relative justify-center items-center">
       <>
         <div
           id="home"
-          className="flex flex-col bg-primary h-auto w-auto  shadow-accent"
+          className="flex flex-col  h-auto w-auto  shadow-accent"
         >
-          <div className="grid items-start justify-items-center">
-            <div className="grid justify-items-center mt-7 mb-8 md:mt-7 md:mb-12">
+          <div className="grid justify-center items-center">
+            <div className="grid justify-center items-center mt-7 mb-8 md:mt-7 md:mb-12">
               <h2 className="text-bold text-4xl lg:text-24xl md:text-5xl sm:text-xl mt-4 text-center xsm:text-3xl filter drop-shadow-lg bg-gradient-to-r from-primary-700 to-white bg-clip-text text-transparent text-wrap">
                 {" "}
                 The Future of Finance <br />
@@ -60,7 +60,7 @@ const Hero = () => {
     
                 </div>
                 <div className="grid mt-8 shadow-sm mb-4">
-                  <h2 className="text-xl text-center text-primary-50">
+                  <h2 className="text-xl text-center justify-center text-primary-50">
                   Leading the way in trusted cryptography with Urisat and its partners
                   </h2>
 

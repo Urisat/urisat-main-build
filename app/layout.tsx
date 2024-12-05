@@ -26,7 +26,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${JetbrainsMono.variable}`}
+        className={`${JetbrainsMono.variable}bg-black-1`}
       >
         <Header/>
         {children}
