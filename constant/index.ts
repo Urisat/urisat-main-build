@@ -39,6 +39,12 @@ export const projects = [
       Subtitle: "Immutable Records on the Blockchain",
   },
   {
+    title: "Security",
+    description:
+      "End-To-End Encyption",
+      Subtitle: "Immutable Records on the Blockchain",
+  },
+  {
     title: "Transparency",
     description:
       "Open Ledger For Verifiable Transaction",
